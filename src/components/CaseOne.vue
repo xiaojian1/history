@@ -1,5 +1,5 @@
 <template>
-	<div>case 1</div>
+	<div>{{$route.params.caseNum}}</div>
 </template>
 
 <script>

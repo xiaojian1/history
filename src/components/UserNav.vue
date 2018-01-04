@@ -1,8 +1,8 @@
 <template>
 	<ul>
-		<li class="nav_item"><router-link to="/static/">首页</router-link></li>
-		<li class="nav_item"><router-link to="/static/service">服务</router-link></li>
-		<li class="nav_item"><router-link to="/static/case">案例</router-link></li>
+		<li class="nav_item"><router-link to="/home">首页</router-link></li>
+		<li class="nav_item"><router-link to="/service">服务</router-link></li>
+		<li class="nav_item"><router-link to="/case">案例</router-link></li>
 	</ul>
 </template>
 
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="less">
+<style scoped lang="scss">
 h1, h2 {
   font-weight: normal;
 }
@@ -34,7 +34,7 @@ li {
 	a{
 		color:#000;
 	}
-	.router-link-exact-active{
+	.router-link-exact-active,.router-link-active{
 		color:red;
 	}
 }

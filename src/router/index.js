@@ -13,31 +13,27 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/static/',
+      path: '/',
+      redirect:'/home'
+    },
+    {
+      path: '/home',
       name: 'home',
       component: HelloWorld
     },
     {
-      path: '/static/service',
+      path: '/service',
       name: 'Service',
       component: Service
     },
     {
-      path: '/static/case',
+      path: '/case',
       name: 'Case',
       component: Case,
       children: [
         {
-          path: 'case1',
+          path: ':caseNum',
           component: CaseOne
-        },
-        {
-          path: 'case2',
-          component: CaseTwo
-        },
-        {
-          path: 'case3',
-          component: CaseThree
         }
       ]
     }
